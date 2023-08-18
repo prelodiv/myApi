@@ -7,7 +7,7 @@ COPY . /code/app
 # 
 RUN python -m venv /opt/venv
 # Enable venv
-ENV PATH="/opt/venv/bin:$PATH"
+
 RUN pip install --no-cache-dir --upgrade -r ./app/requirements.txt
 ENV PYTHONPATH /code/app
 # 
